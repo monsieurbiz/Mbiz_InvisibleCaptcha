@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/**
+ * This file is part of Mbiz_CustomerInvisibleCaptcha for Magento.
+ *
+ * @license proprietary
+ * @author Jacques Bodin-Hullin <j.bodinhullin@monsieurbiz.com> <@jacquesbh>
+ * @category Mbiz
+ * @package Mbiz_CustomerInvisibleCaptcha
+ * @copyright Copyright (c) 2018 Monsieur Biz (https://monsieurbiz.com/)
+ */
+-->
+<layout version="0.1.0">
+
+    <default>
+        <reference name="head">
+            <action method="addJs" ifconfig="mbiz_invisiblecaptcha/general/active">
+                <file>mbiz_invisiblecaptcha/form.js</file>
+            </action>
+            <block type="mbiz_invisiblecaptcha/script" name="mbiz_invisiblecaptcha.script" />
+        </reference>
+    </default>
+
+    <contacts_index_index>
+        <reference name="contactForm">
+            <action method="setTemplate">
+                <template>mbiz_invisiblecaptcha/contacs/form.phtml</template>
+            </action>
+        </reference>
+    </contacts_index_index>
+
+</layout>

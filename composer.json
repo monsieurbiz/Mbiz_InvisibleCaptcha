@@ -1,0 +1,15 @@
+{
+    "name": "monsieurbiz/mbiz_invisiblecaptcha",
+    "description": "Magento 1 module which adds the Invisible ReCaptcha in some pages.",
+    "type": "magento-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jacques Bodin-Hullin",
+            "email": "j.bodinhullin@monsieurbiz.com"
+        }
+    ],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "Allows to manage this package as a dependency."
+    }
+}

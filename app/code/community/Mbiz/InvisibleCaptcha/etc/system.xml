@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/**
+ * This file is part of Mbiz_InvisibleCaptcha for Magento.
+ *
+ * @license proprietary
+ * @author Jacques Bodin-Hullin <j.bodinhullin@monsieurbiz.com> <@jacquesbh>
+ * @category Mbiz
+ * @package Mbiz_InvisibleCaptcha
+ * @copyright Copyright (c) 2018 Monsieur Biz (https://monsieurbiz.com/)
+ */
+-->
+<config>
+    <sections>
+        <mbiz_invisiblecaptcha translate="label" module="mbiz_invisiblecaptcha">
+            <label>Invisible Captcha</label>
+            <tab>general</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label" module="mbiz_invisiblecaptcha">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <expanded>1</expanded>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label comment" module="mbiz_invisiblecaptcha">
+                            <label>Active</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <site_key translate="label comment" module="mbiz_invisiblecaptcha">
+                            <label>Site key</label>
+                            <frontend_type>text</frontend_type>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Site key on Google reCAPTCHA configuration page.]]></comment>
+                        </site_key>
+                        <secret_key translate="label comment" module="mbiz_invisiblecaptcha">
+                            <label>Secret Key</label>
+                            <frontend_type>text</frontend_type>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Secret key on Google reCAPTCHA configuration page.]]></comment>
+                        </secret_key>
+                    </fields>
+                </general>
+                <active_for>
+                    <label>Active for</label>
+                    <frontend_type>text</frontend_type>
+                    <expanded>1</expanded>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <contacts translate="label comment" module="mbiz_invisiblecaptcha">
+                            <label>Contacts form</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </contacts>
+                        <!--<customer_creation translate="label comment" module="mbiz_invisiblecaptcha">-->
+                            <!--<label>Customer creation form</label>-->
+                            <!--<frontend_type>select</frontend_type>-->
+                            <!--<source_model>adminhtml/system_config_source_yesno</source_model>-->
+                            <!--<sort_order>20</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                        <!--</customer_creation>-->
+                        <!--<newsletter_subscription translate="label comment" module="mbiz_invisiblecaptcha">-->
+                            <!--<label>Newsletter subscription form</label>-->
+                            <!--<frontend_type>select</frontend_type>-->
+                            <!--<source_model>adminhtml/system_config_source_yesno</source_model>-->
+                            <!--<sort_order>30</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                        <!--</newsletter_subscription>-->
+                    </fields>
+                </active_for>
+            </groups>
+        </mbiz_invisiblecaptcha>
+    </sections>
+</config>

@@ -1,0 +1,5 @@
+app/code/community/Mbiz/InvisibleCaptcha app/code/community/Mbiz/InvisibleCaptcha
+app/design/frontend/base/default/layout/mbiz_invisiblecaptcha.xml app/design/frontend/base/default/layout/mbiz_invisiblecaptcha.xml
+app/design/frontend/base/default/template/mbiz_invisiblecaptcha app/design/frontend/base/default/template/mbiz_invisiblecaptcha
+app/etc/modules/Mbiz_InvisibleCaptcha.xml app/etc/modules/Mbiz_InvisibleCaptcha.xml
+js/mbiz_invisiblecaptcha js/mbiz_invisiblecaptcha

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/**
+ * This file is part of Mbiz_InvisibleCaptcha for Magento.
+ *
+ * @license proprietary
+ * @author Jacques Bodin-Hullin <j.bodinhullin@monsieurbiz.com> <@jacquesbh>
+ * @category Mbiz
+ * @package Mbiz_InvisibleCaptcha
+ * @copyright Copyright (c) 2018 Monsieur Biz (https://monsieurbiz.com/)
+ */
+-->
+<config>
+    <modules>
+        <Mbiz_InvisibleCaptcha>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Mbiz_InvisibleCaptcha>
+    </modules>
+</config>

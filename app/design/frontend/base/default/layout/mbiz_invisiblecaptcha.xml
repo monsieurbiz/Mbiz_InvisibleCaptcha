@@ -29,4 +29,10 @@
         </reference>
     </contacts_index_index>
 
+    <customer_account_create>
+        <action method="setTemplate" ifconfig="mbiz_invisiblecaptcha/active_for/customer_creation_template" block="customer_form_register">
+            <template>mbiz_invisiblecaptcha/persistent/customer/form/register.phtml</template>
+        </action>
+    </customer_account_create>
+
 </layout>

@@ -15,6 +15,11 @@
         <Mbiz_InvisibleCaptcha>
             <active>true</active>
             <codePool>community</codePool>
+            <depends>
+                <Mage_Contacts />
+                <Mage_Customer />
+                <Mage_Persistent />
+            </depends>
         </Mbiz_InvisibleCaptcha>
     </modules>
 </config>

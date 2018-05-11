@@ -14,6 +14,11 @@
     <modules>
         <Mbiz_InvisibleCaptcha>
             <version>0.1.0</version>
+            <depends>
+                <Mage_Contacts />
+                <Mage_Customer />
+                <Mage_Persistent />
+            </depends>
         </Mbiz_InvisibleCaptcha>
     </modules>
     <global>
@@ -42,14 +47,14 @@
             </updates>
         </layout>
         <events>
-            <!--<controller_action_predispatch_customer_account_createpost>-->
-                <!--<observers>-->
-                    <!--<verify_recaptcha_response>-->
-                        <!--<class>mbiz_invisiblecaptcha/observer</class>-->
-                        <!--<method>verifyResponse</method>-->
-                    <!--</verify_recaptcha_response>-->
-                <!--</observers>-->
-            <!--</controller_action_predispatch_customer_account_createpost>-->
+            <controller_action_predispatch_customer_account_createpost>
+                <observers>
+                    <verify_recaptcha_response>
+                        <class>mbiz_invisiblecaptcha/observer</class>
+                        <method>verifyResponse</method>
+                    </verify_recaptcha_response>
+                </observers>
+            </controller_action_predispatch_customer_account_createpost>
             <controller_action_predispatch_contacts_index_post>
                 <observers>
                     <verify_recaptcha_response>
@@ -87,7 +92,8 @@
             <active_for>
                 <contacts>1</contacts>
                 <contacts_template>0</contacts_template>
-                <!--<customer_creation>1</customer_creation>-->
+                <customer_creation>1</customer_creation>
+                <customer_creation_template>0</customer_creation_template>
                 <!--<newsletter_subscription>1</newsletter_subscription>-->
             </active_for>
         </mbiz_invisiblecaptcha>

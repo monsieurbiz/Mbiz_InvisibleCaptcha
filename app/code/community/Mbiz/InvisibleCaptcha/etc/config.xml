@@ -86,6 +86,7 @@
             </general>
             <active_for>
                 <contacts>1</contacts>
+                <contacts_template>0</contacts_template>
                 <!--<customer_creation>1</customer_creation>-->
                 <!--<newsletter_subscription>1</newsletter_subscription>-->
             </active_for>

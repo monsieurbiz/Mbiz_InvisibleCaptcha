@@ -24,14 +24,15 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 
-$_recaptcha = $this->helper('mbiz_invisiblecaptcha')->isActive() && Mage::getStoreConfigFlag('mbiz_invisiblecaptcha/active_for/contacts');
+$_recaptcha = $this->helper('mbiz_invisiblecaptcha');
+$_recaptchaActive = $_recaptcha->isActive() && Mage::getStoreConfigFlag('mbiz_invisiblecaptcha/active_for/contacts');
 ?>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
 <div class="page-title">
     <h1><?php echo Mage::helper('contacts')->__('Contact Us') ?></h1>
 </div>
 <form action="<?php echo $this->getFormAction(); ?>" id="contactForm" method="post"
-    <?php if ($_recaptcha): ?>
+    <?php if ($_recaptchaActive): ?>
     onsubmit="return captchaContactForm.uiSubmit('<?php echo $this->helper('mbiz_invisiblecaptcha')->getSiteKey(); ?>', onCaptchaContactSubmit, '#g-recaptcha-contact');"
     <?php endif; ?>
 >
@@ -72,14 +73,14 @@ $_recaptcha = $this->helper('mbiz_invisiblecaptcha')->isActive() && Mage::getSto
         <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Submit')) ?>" class="button"><span><span><?php echo Mage::helper('contacts')->__('Submit') ?></span></span></button>
     </div>
 
-    <?php if ($_recaptcha): ?>
+    <?php if ($_recaptchaActive): ?>
     <div class="g-recaptcha" id="g-recaptcha-contact"></div>
     <?php endif; ?>
 
 </form>
 <script type="text/javascript">
     //<![CDATA[
-    <?php if ($_recaptcha): ?>
+    <?php if ($_recaptchaActive): ?>
     var captchaContactForm = new MbizInvisibleRecaptchaForm('contactForm', true);
     var onCaptchaContactSubmit = captchaContactForm.onSubmit.bind(captchaContactForm);
     <?php else: ?>

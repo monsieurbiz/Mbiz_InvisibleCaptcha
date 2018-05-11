@@ -23,8 +23,8 @@
 
     <contacts_index_index>
         <reference name="contactForm">
-            <action method="setTemplate">
-                <template>mbiz_invisiblecaptcha/contacs/form.phtml</template>
+            <action method="setTemplate" ifconfig="mbiz_invisiblecaptcha/active_for/contacts_template">
+                <template>mbiz_invisiblecaptcha/contacts/form.phtml</template>
             </action>
         </reference>
     </contacts_index_index>

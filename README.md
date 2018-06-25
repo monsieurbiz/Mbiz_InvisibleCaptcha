@@ -61,7 +61,7 @@ You just have to make few changes (only additions):
 +    <script type="text/javascript">
 +        //<![CDATA[
 +        var captchaMyForm = new MbizInvisibleRecaptchaForm('myForm', true);
-+        var onCaptchaMyFormSubmit = captchaContactForm.onSubmit.bind(captchaMyForm);
++        var onCaptchaMyFormSubmit = captchaMyForm.onSubmit.bind(captchaMyForm);
 +        //]]>
 +    </script>
 +<?php endif; ?>

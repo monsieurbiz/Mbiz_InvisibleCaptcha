@@ -8,6 +8,8 @@ Adding the JS in all pages is not a choice we made just because it's simple. It'
 
 You need to get an API key from Google: https://www.google.com/recaptcha/admin
 
+PHP >= 5.4
+
 ## How it works
 
 You can setup the API key in the admin panel: `System > Configuration > General > Invisible Captcha`

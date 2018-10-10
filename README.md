@@ -75,3 +75,4 @@ See the [LICENSE](https://github.com/monsieurbiz/Mbiz_InvisibleCaptcha/blob/mast
 ## Contributors
 
 - The people of Monsieur Biz <https://monsieurbiz.com>
+

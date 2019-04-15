@@ -63,14 +63,14 @@
                     </verify_recaptcha_response>
                 </observers>
             </controller_action_predispatch_contacts_index_post>
-            <!--<controller_action_predispatch_newsletter_subscriber_new>-->
-                <!--<observers>-->
-                    <!--<verify_recaptcha_response>-->
-                        <!--<class>mbiz_invisiblecaptcha/observer</class>-->
-                        <!--<method>verifyResponse</method>-->
-                    <!--</verify_recaptcha_response>-->
-                <!--</observers>-->
-            <!--</controller_action_predispatch_newsletter_subscriber_new>-->
+            <controller_action_predispatch_newsletter_subscriber_new>
+                <observers>
+                    <verify_recaptcha_response>
+                        <class>mbiz_invisiblecaptcha/observer</class>
+                        <method>verifyResponse</method>
+                    </verify_recaptcha_response>
+                </observers>
+            </controller_action_predispatch_newsletter_subscriber_new>
         </events>
         <translate>
             <modules>
@@ -94,7 +94,8 @@
                 <contacts_template>0</contacts_template>
                 <customer_creation>1</customer_creation>
                 <customer_creation_template>0</customer_creation_template>
-                <!--<newsletter_subscription>1</newsletter_subscription>-->
+                <newsletter_subscription>0</newsletter_subscription>
+                <newsletter_subscription_template>0</newsletter_subscription_template>
             </active_for>
         </mbiz_invisiblecaptcha>
     </default>

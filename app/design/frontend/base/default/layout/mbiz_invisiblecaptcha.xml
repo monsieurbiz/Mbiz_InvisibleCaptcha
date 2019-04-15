@@ -19,6 +19,11 @@
             </action>
             <block type="mbiz_invisiblecaptcha/script" name="mbiz_invisiblecaptcha.script" />
         </reference>
+        <reference name="left.newsletter">
+            <action method="setTemplate" ifconfig="mbiz_invisiblecaptcha/active_for/newsletter_subscription_template">
+                <template>mbiz_invisiblecaptcha/newsletter/subscribe.phtml</template>
+            </action>
+        </reference>
     </default>
 
     <contacts_index_index>

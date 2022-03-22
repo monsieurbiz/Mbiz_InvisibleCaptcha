@@ -34,10 +34,10 @@ class Mbiz_InvisibleCaptcha_Model_Observer extends Mage_Core_Model_Abstract
                 $configPath = 'mbiz_invisiblecaptcha/active_for/customer_creation';
                 $urlToRedirect = Mage::getUrl('customer/account/create', ['_current' => true]);
                 break;
-//            case 'controller_action_predispatch_newsletter_subscriber_new':
-//                $configPath = 'mbiz_invisiblecaptcha/active_for/newsletter_subscription';
-//                $urlToRedirect = Mage::getUrl('', ['_current' => true]);
-//                break;
+           case 'controller_action_predispatch_newsletter_subscriber_new':
+               $configPath = 'mbiz_invisiblecaptcha/active_for/newsletter_subscription';
+               $urlToRedirect = Mage::getUrl('', ['_current' => true]);
+               break;
             default:
                 return;
         }
